@@ -298,6 +298,46 @@ footer .container a{
     color: white;
 }
 /* Fim do Footer */
+.backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+
+    width: 70px;
+    height: 70px;
+
+    border-radius: 50%;
+    border: none;
+
+    background: linear-gradient(135deg,var(--verde));
+    color: white;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    display: none;
+
+    box-shadow: 0 8px 20px rgba(3, 90, 22, 0.4);
+
+    transition: 
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        opacity 0.3s ease;
+}
+
+/* Efeito hover */
+.backToTop:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(11, 78, 28, 0.6);
+}
+
+/* Quando clicar */
+.backToTop:active {
+    transform: scale(0.95);
+}
+
 /* Responsive */
 @media (max-width: 960px) {
     .menu-icon {
