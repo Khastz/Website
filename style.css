@@ -1,0 +1,402 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+:root {
+    --verde-escuro: #14424b;
+    --verde: #2f9364;
+    --laranja: #ff7c37;
+    --degrade-btn: linear-gradient(#fe9611, #ff5c00);
+    --color-p: #a1a1a1;
+    --color-p-2: #868585;
+}
+
+.background-verde {
+    background-color: var(--verde-escuro);
+}
+/* Classes reutilizáveis */
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+section,
+footer {
+    padding: 2.7rem 0;
+}
+.btn-gradient {
+    background: var(--degrade-btn);
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0 4px 15px rgba(255, 92, 0, 0.3);
+    transition: background 0.3s ease;
+}
+/* Classes do site */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.logo a {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+.ul { 
+    align-items: center;
+    display: flex;
+}
+.ul li {
+    margin: 0 35px;
+    font-size: 15px;
+}
+.ul li a {
+    color: white;
+}
+/* Main */
+main .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.main-text {
+    width: 50%;
+    color: white;
+}
+.main-text h1 {
+    font-size: 4.5rem;
+}
+.main-text div {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.main-img{
+    width: 50%;
+}
+.main-img img{
+    width: 100%;
+}
+/* Menu Icon */
+.menu-icon {
+    display: none;
+    position: relative;
+    z-index: 10;
+}
+/* Resultados */
+.resultados {
+    background-color: #fa8607;
+}
+.resultados .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.resultados .resultados-text {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    width: 50%;
+}
+.resultados .resultados-numeros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.resultados .resultados-numeros p {
+    margin: 0 30px;
+    text-align: center;
+    font-size: 20px;
+}
+.resultados .resultados-numeros p span {
+    font-size: 30px;
+    font-weight: 600;
+}
+/* Diferenciais */
+.diferenciais .container{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+}
+.diferenciais .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.diferenciais .card:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+.diferenciais .card img {
+    width: 60px;
+}
+.diferenciais .card .titulo{
+    margin: 13px 0;
+    font-weight: 600;
+}
+/* Section casa */
+.casa .container {
+    display: flex;
+    align-items: center;
+}
+.casa .casa-img{
+    width: 50%;
+}
+.casa .casa-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+.casa .casa-text {
+    width: 50%;
+    padding-left: 90px;
+}
+.casa .casa-text h2 {
+    font-size: 2.5rem;
+}
+.casa .casa-text p {
+    margin: 20px 0;
+    color: var(--color-p);
+}
+.casa .casa-text p b{
+    color: black;
+    font-size: 20px;
+}
+.melhores-lugares .azul {
+    font-size: 24px;
+    font-weight: 600;
+    color: #006090;
+}
+.melhores-lugares h2 {
+    font-size: 2.5rem;
+}
+.melhores-lugares .cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.melhores-lugares .cards .card-item{
+    width: 30%;
+    text-align: center;
+    padding: 30px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+.melhores-lugares .cards img{
+    width: 80px;
+}
+.melhores-lugares .cards .local-casa{
+    margin: 5px 0;
+    color: var(--color-p);
+}
+.melhores-lugares .cards .nome-casa{
+    font-size: 30px;
+    font-weight: 500;
+}
+.melhores-lugares .cards .contato{
+    margin-bottom: 20px;
+    color: var(--color-p-2);
+}
+.melhores-lugares .cards button{
+    padding: 10px 20px;
+    color: white;
+    background-color: var(--laranja);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0 4px 15px rgba(255, 92, 0, 0.3);
+    transition: background 0.3s ease;
+}
+/* sessão newsletter */
+.newsletter {
+    margin-top: 50px;
+    background-color: var(--verde);
+}
+.newsletter .box-newsletter {
+    text-align: center;
+    padding: 100px;
+    background-image: url('img/background-newsletter.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+.newsletter .box-newsletter h2 {
+    font-size: 2.5rem;
+}
+.newsletter .box-newsletter p {
+    margin: 13px 0;
+}
+.newsletter .box-newsletter input{
+    width: 35%;
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    color: #00000098;
+    background-color: #faefda;
+}
+.newsletter .box-newsletter button{
+    font-size: 15px;
+    border: none;
+    outline: none;
+    padding: 15px;
+    border-radius: 14px;
+    color: white;
+    background-color: var(--verde);
+    cursor: pointer;
+}
+/* fim da sessão newsletter */
+/* Footer */
+footer {
+    background-color: var(--verde-escuro);
+}
+footer .container {
+    display: flex;
+    color: white;
+}
+footer .container ul{
+    width: 50%;
+}
+footer .container h3{
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+footer .container .redes-sociais img{
+    margin-right: 10px;
+}
+footer .container ul > p{
+    margin-bottom: 40px;
+}
+footer .container li{
+    margin: 10px 0;
+}
+footer .container a{
+    color: white;
+}
+/* Fim do Footer */
+/* Responsive */
+@media (max-width: 960px) {
+    .menu-icon {
+        display: block;
+    }
+    .ul {
+        position: fixed;
+        background: var(--verde-escuro);
+        top: 0;
+        width: 100%;
+        height: 100%;
+        left: 100%;
+        transition: 0.3s;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .ul li {
+        margin: 20px 0;
+        font-size: 20px;
+    }
+    .ul.ativo {
+        left: 0;
+    }
+    main .container {
+        flex-direction: column;
+    }
+    main .container .main-img,
+    main .container .main-text{
+        width: 100%;
+        text-align: center;
+    }
+    main .container .main-text div{
+        justify-content: center;
+    }
+    main .container .main-text h1{
+        font-size: 4rem;
+    }
+    .resultados .container {
+        flex-direction: column;
+    }
+    .resultados .resultados-numeros {
+        margin-top: 30px;
+    }
+    .resultados .resultados-text,
+    .resultados .resultados-numeros {
+        width: 100%;
+        text-align: center;
+    }
+    .diferenciais .container {
+        flex-direction: column;
+    }
+    .diferenciais .card {
+        width: 100%;
+        margin: 15px 0;
+    }
+    .casa .container {
+        flex-direction: column-reverse;
+    }
+    .casa .casa-text,
+    .casa .casa-img {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    .melhores-lugares .cards {
+        flex-direction: column;
+    }
+    .melhores-lugares .cards .card-item {
+        width: 100%;
+        margin-top: 50px;
+    }
+    .newsletter .box-newsletter{
+        padding: 50px;
+    }
+    .newsletter .box-newsletter h2{
+        font-size: 2rem;
+    }
+    .newsletter .box-newsletter input{
+        width: 90%;
+    }
+    .newsletter .box-newsletter button{
+        width: 50%;
+        margin-top: 20px;
+    }
+    footer .container{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    footer .container ul {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+@media (max-width: 480px) {
+        .resultados .resultados-numeros {
+            flex-direction: column;
+        }
+    }
+    main .container .main-text h1 {
+        font-size: 3rem;
+    }
+}        
