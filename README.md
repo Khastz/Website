@@ -42,9 +42,6 @@ Website/
 🔗 **GitHub Pages:**  
 https://Khastz.github.io/Website
 
-> Caso o link ainda não esteja ativo, aguarde alguns minutos após a ativação
-do GitHub Pages.
-
 ---
 
 ## 🧠 Aprendizados
@@ -61,20 +58,15 @@ Durante o desenvolvimento deste projeto, foram praticados:
 ---
 
 ## 📌 Próximas melhorias
-
-- [ ] Responsividade para dispositivos móveis  
-- [ ] Menu fixo no topo  
-- [ ] Botão “voltar ao topo” animado  
-- [ ] Sessão de habilidades  
-- [ ] Novos projetos  
-- [ ] Modo claro/escuro  
+ 
+- [ ] Menu fixo no topo
 
 ---
 
 ## 📫 Contato
 
 - GitHub: https://github.com/Khastz  
-- Email: seuemail@email.com  
+- Email: rsilva.rs354@email.com  
 
 ---
 
